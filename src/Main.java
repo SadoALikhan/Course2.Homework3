@@ -12,5 +12,10 @@ public class Main {
                 new Bicycle("bicycle1", 2),
                 new Bicycle("bicycle2", 2)
         };
+
+        ServiceStation serviceStationForTransport = new ServiceStationForTransport();
+        serviceStationForTransport.check(cars);
+        serviceStationForTransport.check(trucks);
+        serviceStationForTransport.check(bicycles);
     }
 }

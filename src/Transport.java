@@ -23,7 +23,7 @@ public class Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public String updateTyre() {
+        return "Меняем покрышку";
     }
 }
