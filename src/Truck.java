@@ -5,7 +5,7 @@ public class Truck extends Transport {
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем двигатель грузовика");
     }
 
     public void checkTrailer() {
@@ -15,5 +15,15 @@ public class Truck extends Transport {
     @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку грузовика");
+    }
+
+    public void check(Truck truck) {
+        System.out.println("Обслуживаем " + truck.getModelName());
+        for (int a = 0; a < truck.getWheelsCount(); a++) {
+                truck.updateTyre();
+        }
+        truck.checkEngine();
+        truck.checkTrailer();
+        System.out.println();
     }
 }
