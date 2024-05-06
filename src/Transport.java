@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport {
     private String modelName;
     private int wheelsCount;
 
@@ -23,7 +23,5 @@ public class Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    public String updateTyre() {
-        return "Меняем покрышку";
-    }
+    public abstract void updateTyre();
 }
