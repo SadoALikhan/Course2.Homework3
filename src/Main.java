@@ -21,9 +21,9 @@ public class Main {
         ServiceStation serviceStation = new ServiceStation();
         serviceStation.check(cars[0]);
         serviceStation.check(cars[1]);
-        trucks[1].check(trucks[0]);
-        trucks[1].check(trucks[1]);
-        bicycles[1].check(bicycles[0]);
-        bicycles[1].check(bicycles[1]);
+        serviceStation.check(trucks[0]);
+        serviceStation.check(trucks[1]);
+        serviceStation.check(bicycles[0]);
+        serviceStation.check(bicycles[1]);
     }
 }
