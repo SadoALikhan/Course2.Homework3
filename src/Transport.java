@@ -25,10 +25,6 @@ public abstract class Transport {
 
     public abstract void updateTyre();
 
-    public abstract void checkEngine();
-
-    public abstract void checkTrailer();
-
     public abstract void checkTransport(Transport transport);
 
 }

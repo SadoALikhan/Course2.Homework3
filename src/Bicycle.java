@@ -10,20 +10,11 @@ public class Bicycle extends Transport {
     }
 
     @Override
-    public void checkEngine() {
-        System.out.println("Нет двигателя");
-    }
-
-    @Override
-    public void checkTrailer() {
-        System.out.println("Прицепа не имеется");
-    }
-
-    @Override
     public void checkTransport(Transport transport) {
-        System.out.println("Обслуживаем " + transport.getModelName());
-        for (int a = 0; a < transport.getWheelsCount(); a++) {
-            transport.updateTyre();
+        Bicycle bicycle = (Bicycle) transport;
+        System.out.println("Обслуживаем " + bicycle.getModelName());
+        for (int a = 0; a < bicycle.getWheelsCount(); a++) {
+            bicycle.updateTyre();
         }
         System.out.println();
     }
