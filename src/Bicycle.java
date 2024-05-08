@@ -10,11 +10,10 @@ public class Bicycle extends Transport {
     }
 
     @Override
-    public void checkTransport(Transport transport) {
-        Bicycle bicycle = (Bicycle) transport;
-        System.out.println("Обслуживаем " + bicycle.getModelName());
-        for (int a = 0; a < bicycle.getWheelsCount(); a++) {
-            bicycle.updateTyre();
+    public void checkTransport() {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int a = 0; a < this.getWheelsCount(); a++) {
+            this.updateTyre();
         }
         System.out.println();
     }

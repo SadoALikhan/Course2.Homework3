@@ -20,14 +20,13 @@ public class Truck extends Transport {
     }
 
     @Override
-    public void checkTransport(Transport transport) {
-        Truck truck = (Truck) transport;
-        System.out.println("Обслуживаем " + truck.getModelName());
-        for (int a = 0; a < truck.getWheelsCount(); a++) {
-                truck.updateTyre();
+    public void checkTransport() {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int a = 0; a < this.getWheelsCount(); a++) {
+                this.updateTyre();
         }
-        truck.checkEngine();
-        truck.checkTrailer();
+        this.checkEngine();
+        this.checkTrailer();
         System.out.println();
     }
 }

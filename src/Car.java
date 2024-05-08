@@ -14,13 +14,12 @@ public class Car extends Transport {
     }
 
     @Override
-    public void checkTransport(Transport transport) {
-        Car car = (Car) transport;
-        System.out.println("Обслуживаем " + car.getModelName());
-        for (int a = 0; a < car.getWheelsCount(); a++) {
-            transport.updateTyre();
+    public void checkTransport() {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int a = 0; a < this.getWheelsCount(); a++) {
+            this.updateTyre();
         }
-        car.checkEngine();
+        this.checkEngine();
         System.out.println();
     }
 }
